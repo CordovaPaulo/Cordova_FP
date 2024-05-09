@@ -1,0 +1,123 @@
+    *{
+        font-family: Arial, Helvetica, sans-serif;
+    }
+
+    body{
+        background-image: repeating-linear-gradient(rgb(206, 146, 222), hsl(0, 3%, 12%));
+        height: 100vh;
+    }
+
+    .container{
+        margin: 0;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 100%;
+    }
+
+    #calcu{
+        background-color: hsl(0, 3%, 12%);
+        max-width: 350px;
+        border-radius: 20px;
+    }
+
+    #display1{
+        width: 330px;
+        height: 50px;
+        padding: 10px;
+        font-size: 2.2rem;
+        text-align: left;
+        border: none;
+        background-color: hsl(0, 2%, 21%);
+        color: antiquewhite ;
+        border-radius: 20px 20px 0px 0px;
+    }
+
+    #display2{
+        overflow-x: auto;
+        overflow-y: visible;
+        text-align: right;
+        width: 330px;
+        height: 50px;
+        padding: 10px;
+        font-size: 2rem;
+        text-align: left;
+        border: none;
+        background-color: hsl(0, 2%, 21%);
+        color: antiquewhite ;
+        border-top: 2px solid antiquewhite;
+        direction: ltr;
+        text-align-last: right;
+    }
+
+    #keysSet1{
+        display: grid;
+        grid-template-columns: repeat(4, 1fr);
+        gap: 5px;
+        padding: 15px;
+    }
+
+    .keysSet2{
+        display: none;
+        position: absolute; 
+        grid-template-columns: repeat(4, 1fr);
+        gap: 5px;
+        padding: 20px;
+        left: 50%;
+        top: 50%;
+        transform: translate(-155%, -50%);
+        background-color: hsl(0, 3%, 12%);
+        border-radius: 20px;
+    }
+
+    .keysSet2.active {
+        display: grid;
+    }
+
+    button{
+        width: 70px;
+        height: 70px;
+        border: none;
+        font-size: 2rem;
+        border-radius: 10%;
+        cursor: pointer;
+        background-color: hsl(0, 2%, 21%);
+        color: antiquewhite;
+        padding: 2px 0px 2px 0px;
+    }
+
+    .operator{
+        background-color: rgb(206, 146, 222);
+        color:  hsl(0, 3%, 12%);
+    }
+
+    .set2_Operator{
+        background-color: rgb(125, 221, 125);
+        color:  hsl(0, 3%, 12%);
+        font-size: 1.5rem;
+        font-weight: bold;
+    }
+
+    button:hover{
+        background-color: hsl(0, 2%, 29%);
+    }
+
+    .operator:hover{
+        background-color: rgb(239, 194, 251);
+    }
+
+    button:active{
+        background-color: hsl(0, 7%, 12%);
+    }
+
+    .operator:active{
+        background-color: rgb(172, 111, 188);
+    }
+
+    .set2_Operator:hover{
+        background-color: rgb(159, 245, 159);
+    }
+
+    .set2_Operator:active{
+        background-color: rgb(81, 165, 81);
+    }
